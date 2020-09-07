@@ -54,28 +54,6 @@ const filterItemsDate = (e) => {
   setOrderDate(e.target.value)
 }
 
-// const updatePinCode = e => {
-//   setPinCode(e.target.value)
-//   filterItems()
-// };
-
-// const updateOrderDate = e => {
-//   setOrderDate(e.target.value)
-//   filterItems()
-// };
-
-  // const search = e => {
-  //   const regex = new RegExp(`^${e.target.value}`, "i");
-  //   const value = csvData.filter(list => regex.test(list.deliveryPincode))
-  //   setSearched(value)
-  // }
-
-  // const search1 = e => {
-  //   const regex = new RegExp(`^${e.target.value}`, "i");
-  //   const date = csvData.filter(list => regex.test(list.orderDate))    
-  //   setSearched(date)    
-  // }
-
   console.log(csvData)
   return (
 
@@ -89,11 +67,7 @@ const filterItemsDate = (e) => {
       />
       <div>          
         <label className="inputfield">
-        Pincode:
-        {/* <input onChange={e => {
-          search(e)
-          console.log(e.target.value)
-          }} /> */}
+        Pincode:        
           <input 
           value={pinCode}
           onChange={e => {
@@ -103,12 +77,8 @@ const filterItemsDate = (e) => {
             
         </label>
         <label className="inputfield">
-        Date:
-        {/* <input onChange={e => {
-          search1(e)
-          console.log(e.target.value)
-          }} /> */}
-          <input
+        Date:        
+          <input 
           value={orderDate}
           onChange={e => {
             filterItemsDate(e)
