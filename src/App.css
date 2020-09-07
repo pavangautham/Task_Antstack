@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.inputfield{
+  padding: 1rem;
+}
+
+.dragndrop {
+  font-weight: bold;
+  border-style: dotted;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
